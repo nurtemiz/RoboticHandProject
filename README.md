@@ -6,6 +6,11 @@ Robotik el ile android arasındaki iletişim uzaktan haberleşme protokolleri il
 
 Uygulamaya ait ekran görüntüleri...
 
-![image1](/screenshots/button-control.png)
+
 ![image2](/screenshots/sound-control.png)
+
+
+![image1](/screenshots/button-control.png)
+
+
 ![image3](/screenshots/bluetooth-settings.png)
