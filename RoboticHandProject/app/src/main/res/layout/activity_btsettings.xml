@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@color/colorPrimaryDark"
+    tools:context=".btsettings">
+
+    <TextView
+        android:id="@+id/desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:gravity="center"
+        android:layout_margin="20dp"
+        android:text="BLUETOOTH AYARLARI"
+        android:fontFamily="@font/showg"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:textSize="25sp"/>
+
+    <TextView
+        android:id="@+id/tv_status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="15dp"
+        android:text=""
+        android:fontFamily="@font/gothic"
+        android:textColor="#fff"
+        android:textSize="18sp"/>
+
+    <Button
+        android:id="@+id/btn_enable"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="15dp"
+        android:fontFamily="@font/gothic"
+        android:background="@color/colorPrimary"
+        android:textColorHint="#fff"
+        android:hint="Açık"
+        android:textSize="18sp"/>
+
+    <Button
+        android:id="@+id/btn_view_paired"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/gothic"
+        android:background="@color/colorThree"
+        android:enabled="false"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="15dp"
+        android:textColorHint="#fff"
+        android:hint="Eşleşmiş Cihazlar"
+        android:textSize="18sp"/>
+
+    <Button
+        android:id="@+id/btn_scan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:fontFamily="@font/gothic"
+        android:background="@color/colorFour"
+        android:enabled="false"
+        android:hint="Tara"
+        android:textColorHint="#fff"
+        android:textSize="18sp"/>
+
+</LinearLayout>

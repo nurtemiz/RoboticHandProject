@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+    tools:context=".SplashScreen">
+
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/splash_gif"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/mygif"
+        android:layout_alignParentLeft="true" />
+
+    <TextView
+        android:id="@+id/splash_hand"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_below="@id/splash_gif"
+        android:textColor="@color/colorPrimaryDark"
+        android:fontFamily="@font/showg"
+        android:textSize="30dp"
+        android:text="HAND CONTROL" />
+
+</RelativeLayout>

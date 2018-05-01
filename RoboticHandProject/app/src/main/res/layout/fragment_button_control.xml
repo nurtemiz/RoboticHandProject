@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingTop="16dp"
+    android:paddingRight="16dp"
+    android:paddingLeft="16dp"
+    tools:context=".ButtonControlFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/gothic"
+                android:textColor="@color/colorOne"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:text="BLUETOOTH DURUMU :   " />
+
+            <TextView
+                android:id="@+id/MtxtVwState"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="**"
+                android:fontFamily="@font/gothic"
+                android:textAlignment="center" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btOn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:layout_marginRight="5dp"
+                android:fontFamily="@font/gothic"
+                android:textColorHint="@color/colorAccent"
+                android:background="@color/colorAccent_"
+                android:hint="Bluetooth Aç" />
+
+            <Button
+                android:id="@+id/btConnect"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginRight="5dp"
+                android:padding="5dp"
+                android:fontFamily="@font/gothic"
+                android:textColorHint="@color/colorAccent"
+                android:background="@color/colorAccent_"
+                android:hint="Cihaza Bağlan" />
+
+            <Button
+                android:id="@+id/btSettings"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:fontFamily="@font/gothic"
+                android:textColorHint="@color/colorAccent"
+                android:background="@color/colorAccent_"
+                android:hint="Bluetooth Ayarları" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/command"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/gothic"
+            android:textColor="@color/colorOne"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:text="KOMUT VER :" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/basParmak"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/gothic"
+                android:text="Baş Parmak        " />
+
+            <Button
+                android:id="@+id/basParmakOn"
+                android:layout_width="75dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/gothic"
+                android:textColor="@color/colorAccent"
+                android:textStyle="bold"
+                android:background="@color/colorPrimary"
+                android:text="Aç" />
+
+            <Button
+                android:id="@+id/basParmakOff"
+                android:layout_width="75dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/gothic"
+                android:textColor="@color/colorAccent"
+                android:textStyle="bold"
+                android:background="@color/colorPrimaryDark"
+                android:text="Kapat" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/isaretParmak"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/gothic"
+                android:text="İşaret Parmağı   " />
+
+            <Button
+                android:id="@+id/isaretParmakOn"
+                android:layout_width="75dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/gothic"
+                android:textColor="@color/colorAccent"
+                android:textStyle="bold"
+                android:background="@color/colorPrimary"
+                android:text="Aç" />
+
+            <Button
+                android:id="@+id/isaretParmakOff"
+                android:layout_width="75dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/gothic"
+                android:textColor="@color/colorAccent"
+                android:textStyle="bold"
+                android:background="@color/colorPrimaryDark"
+                android:text="Kapat" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/ortaParmak"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/gothic"
+                android:text="Orta Parmak      " />
+
+            <Button
+                android:id="@+id/ortaParmakOn"
+                android:layout_width="75dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/colorAccent"
+                android:textStyle="bold"
+                android:background="@color/colorPrimary"
+                android:text="Aç" />
+
+            <Button
+                android:id="@+id/ortaParmakOff"
+                android:layout_width="75dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/gothic"
+                android:textColor="@color/colorAccent"
+                android:textStyle="bold"
+                android:background="@color/colorPrimaryDark"
+                android:text="Kapat" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/yuzukParmak"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/gothic"
+                android:text="Yüzük Parmağı  " />
+
+            <Button
+                android:id="@+id/yuzukParmakOn"
+                android:layout_width="75dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/gothic"
+                android:textColor="@color/colorAccent"
+                android:textStyle="bold"
+                android:background="@color/colorPrimary"
+                android:text="Aç" />
+
+            <Button
+                android:id="@+id/yuzukParmakOff"
+                android:layout_width="75dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/gothic"
+                android:textColor="@color/colorAccent"
+                android:textStyle="bold"
+                android:background="@color/colorPrimaryDark"
+                android:text="Kapat" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/serceParmak"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/gothic"
+                android:text="Serçe Parmağı  " />
+
+            <Button
+                android:id="@+id/serceParmakOn"
+                android:layout_width="75dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/gothic"
+                android:textColor="@color/colorAccent"
+                android:textStyle="bold"
+                android:background="@color/colorPrimary"
+                android:text="Aç" />
+
+            <Button
+                android:id="@+id/serceParmakOff"
+                android:layout_width="75dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/gothic"
+                android:textColor="@color/colorAccent"
+                android:textStyle="bold"
+                android:background="@color/colorPrimaryDark"
+                android:text="Kapat" />
+        </LinearLayout>
+
+    </LinearLayout>
+</FrameLayout>
